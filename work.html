@@ -3,36 +3,59 @@
    <head>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title>Work - Dennis Snellenberg</title>
-      <meta name="description" content="Creating next level digital products. I help companies from all over the world (Netherlands, United States, United Kingdom, Australia, Germany etc.)"/>
-      <meta property="og:title" content="Work - Dennis Snellenberg"/>
-      <meta property="og:description" content="Creating next level digital products. I help companies from all over the world (Netherlands, United States, United Kingdom, Australia, Germany etc.)"/>
-      <meta property="og:image" content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"/>
-      <meta property="og:site_name" content="Dennis Snellenberg"/>
-                              <meta property="og:locale" content="en"/>
-      <meta property="og:type" content="website"/>      <meta property="twitter:title" content="Work - Dennis Snellenberg"/>
-      <meta property="twitter:description" content="Creating next level digital products. I help companies from all over the world (Netherlands, United States, United Kingdom, Australia, Germany etc.)"/>
-      <meta property="twitter:image" content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"/>
+      <title>Contact - Dales, Jaimes</title>
+      <meta name="description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="og:title" content="Contact - Jaimes Dales"/>
+      <meta property="og:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="og:image" content="images/closeup.png"/>
+      <meta property="og:site_name" content="Jaimes Dales"/>
+      <meta property="og:locale" content="en"/>
+      <meta property="og:type" content="website"/>
+      <meta property="twitter:title" content="Contact - Jaimes Dales"/>
+      <meta property="twitter:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="twitter:image" content="images/closeup.png"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="google" content="notranslate"/>
-      <meta property="og:locale" content="en"/>
-      <link rel="canonical" href="https://dennissnellenberg.com/work"/>
+      <link rel="canonical" href="contact.html"/>
 
-      <link rel="preload" as="font" href="https://dennissnellenberg.com/assets/fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
+      <link rel="preload" as="font" href="fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
 
-      <link href="https://dennissnellenberg.com/assets/css/normalize.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/locomotive-scroll.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/styleguide.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/components.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/style-new.css" rel="stylesheet">
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
-		<script>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/locomotive-scroll.css" rel="stylesheet">
+      <link href="css/styleguide.css" rel="stylesheet">
+      <link href="css/components.css" rel="stylesheet">
+      <link href="css/style-new.css" rel="stylesheet">
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
+      <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          gtag('set', 'page', window.location.pathname);
          gtag('send', 'pageview');
-         
          gtag('config', 'G-SGWQQRQ15Y');
-		</script>
-      
+      </script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form.form");
+            form.addEventListener("submit", function (e) {
+               e.preventDefault();
+
+               const name = document.getElementById("form-name").value;
+               const email = document.getElementById("form-email").value;
+               const company = document.getElementById("form-company").value;
+               const service = document.getElementById("form-service").value;
+               const message = document.getElementById("form-message").value;
+
+               const subject = encodeURIComponent("New Inquiry from " + name);
+               const body = encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0ACompany: ${company}%0AService: ${service}%0AMessage: ${message}`);
+
+               const mailtoLink = `mailto:james.dales@mdci.edu.ph?subject=${subject}&body=${body}`;
+               window.location.href = mailtoLink;
+            });
+         });
+      </script>
    </head>
 
     <body data-barba="wrapper">
@@ -54,17 +77,17 @@
                     <h2 class="home-active-last">Hallo<div class="dot"></div></h2>
                                         <h2>Home<div class="dot"></div></h2>
                                         <h2 class="active">Work<div class="dot"></div></h2>
-                                        <h2>TWICE<div class="dot"></div></h2>
-                                        <h2>The Damai<div class="dot"></div></h2>
-                                        <h2>FABRIC&trade;<div class="dot"></div></h2>
-                                        <h2>Aanstekelijk<div class="dot"></div></h2>
-                                        <h2>Base Create<div class="dot"></div></h2>
-                                        <h2>AVVR<div class="dot"></div></h2>
-                                        <h2>GraphicHunters<div class="dot"></div></h2>
-                                        <h2>Future Goals<div class="dot"></div></h2>
-                                        <h2>Atypikal<div class="dot"></div></h2>
-                                        <h2>One:Nil<div class="dot"></div></h2>
-                                        <h2>Andy Hardy<div class="dot"></div></h2>
+                                        <h2>3D Space cat<div class="dot"></div></h2>
+                                        <h2>OutRun Maze<div class="dot"></div></h2>
+                                        <h2>Event Poster&trade;<div class="dot"></div></h2>
+                                        <h2>Blue Monster 3D model<div class="dot"></div></h2>
+                                        <h2>Web Miyam portfolio<div class="dot"></div></h2>
+                                        <h2>Web Meriam portfolio<div class="dot"></div></h2>
+                                        <h2>Web DNA tools with Log In <div class="dot"></div></h2>
+                                        <h2>Web Digicraft<div class="dot"></div></h2>
+                                        <h2>Tshirt design<div class="dot"></div></h2>
+                                        <h2>Magazine Cover<div class="dot"></div></h2>
+                                        <h2>Murals<div class="dot"></div></h2>
                                         <h2>About<div class="dot"></div></h2>
                                         <h2>Contact<div class="dot"></div></h2>
                                         <h2>Success<div class="dot"></div></h2>
@@ -246,511 +269,56 @@
       </div>
    </div>
 </header>
-<section class="section work-filters" data-scroll-section>
-   <div class="container once-in">
-      <div class="filter-row">
-         <div class="toggle-row">
-            <div class="btn btn-normal all-btn active">
-               <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                  <div class="btn-fill"></div>
-                  <span class="btn-text">
-                     <span class="btn-text-inner change">All</span>
-                  </span>
-               </div>
-            </div>
-            <div class="btn btn-normal design-btn">
-               <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                  <div class="btn-fill"></div>
-                  <span class="btn-text">
-                     <span class="btn-text-inner change">Design<div class="count-nr">7</div></span>
-                  </span>
-               </div>
-            </div>
-            <div class="btn btn-normal development-btn">
-               <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                  <div class="btn-fill"></div>
-                  <span class="btn-text">
-                     <span class="btn-text-inner change">Development<div class="count-nr">11</div></span>
-                  </span>
-               </div>
-            </div>
-         </div>
-         <div class="grid-row">
-            <div class="btn btn-normal btn-icon rows-btn active">
-               <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                  <div class="btn-fill"></div>
-                  <span class="btn-text">
-                     <span class="btn-text-inner change"><svg style="width: 20px;" width="20" height="19" viewBox="0 0 20 19"><g fill="currentColor" fill-rule="evenodd"><path d="M0 6h20v1H0zM0 0h20v1H0zM0 12h20v1H0zM0 18h20v1H0z"/></g></svg></span>
-                  </span>
-               </div>
-            </div>
-            <div class="btn btn-normal btn-icon columns-btn">
-               <div class="btn-click magnetic" data-strength="25" data-strength-text="15">
-                  <div class="btn-fill"></div>
-                  <span class="btn-text"> 
-                     <span class="btn-text-inner change"><svg style="width: 20px;" width="20" height="20" viewBox="0 0 20 20"><g fill="currentColor" fill-rule="nonzero"><path d="M8 0H0v8h8V0zM7 1v6H1V1h6zM8 12H0v8h8v-8zm-1 1v6H1v-6h6zM20 0h-8v8h8V0zm-1 1v6h-6V1h6zM20 12h-8v8h8v-8zm-1 1v6h-6v-6h6z"/></g></svg></span>
-                  </span>
-               </div>
-            </div>
-         </div>
-      </div>
+<section class="section portfolio-section" data-scroll-section>
+   <div class="container">
+     <div class="portfolio-grid">
+ 
+       
+ 
+       <!-- Example Video (looping like GIF) -->
+       <div class="portfolio-item">
+         <video src="media/home-item-7.mp4" autoplay loop muted playsinline style="width:100%; height:auto;"></video>
+         <h4>Outrun Maze (Under development)</h4>
+         <p>3D third person game</p>
+       </div>
+       <!-- Example Photo -->
+       <div class="portfolio-item">
+         <img src="images/vinal poster.png" alt="Photo Project" style="width:100%; height:auto;">
+         <h4>Futuric poster</h4>
+         <p>This is a Futuristic Presidential poster</p>
+       </div>
+       <div class="portfolio-item">
+         <video src="media/home-item-5.mp4" autoplay loop muted playsinline style="width:100%; height:auto;"></video>
+         <h4>3D Space cat</h4>
+         <p>A 3D model of space cat</p>
+       </div>
+       <div class="portfolio-item">
+         <img src="images/Mural ifugao.png" alt="Photo Project" style="width:100%; height:auto;">
+         <h4>Mural whole Room</h4>
+         <p>Ifugao inspired Mural</p>
+       </div>
+       <div class="portfolio-item">
+         <img src="images/event poster.png" alt="Photo Project" style="width:100%; height:auto;">
+         <h4>Event Posters</h4>
+         <p>An Event poster examples</p>
+       </div>
+
+
+      
+ 
+     </div>
    </div>
-</section>
-<section class="section-wrap section-wrap-work once-in" data-scroll-section>
-   <section class="section work-grid small-work-grid grid-fade grid-rows-part visible">
-      <div class="container">
-         <div class="grid-sub-title">
-            <div class="flex-col">
-               <h5>Client</h5>
-            </div>
-            <div class="flex-col">
-               <h5>Location</h5>
-            </div>
-            <div class="flex-col">
-               <h5>Services</h5>
-            </div>
-            <div class="flex-col">
-               <h5>Year</h5>
-            </div>
-         </div>
-         <ul class="work-items mouse-pos-list-image-wrap all-active">
-                        <li class="development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/twice" class="row">
-                  <div class="flex-col">
-                     <h4><span>TWICE</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Spain</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Interaction & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2024</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/the-damai" class="row">
-                  <div class="flex-col">
-                     <h4><span>The Damai</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Bali, Indonesia</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2024</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/fabric" class="row">
-                  <div class="flex-col">
-                     <h4><span>FABRIC™</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>United Kingdom</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2023</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/aanstekelijk" class="row">
-                  <div class="flex-col">
-                     <h4><span>Aanstekelijk</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>The Netherlands</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2023</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="development interaction design visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/base-create" class="row">
-                  <div class="flex-col">
-                     <h4><span>Base Create</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Hong Kong</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2023</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/avvr" class="row">
-                  <div class="flex-col">
-                     <h4><span>AVVR</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>The Netherlands</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2023</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/graphichunters" class="row">
-                  <div class="flex-col">
-                     <h4><span>GraphicHunters</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>The Netherlands</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2022</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/future-goals" class="row">
-                  <div class="flex-col">
-                     <h4><span>Future Goals</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Curaçao</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Interaction & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2022</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/atypikal" class="row">
-                  <div class="flex-col">
-                     <h4><span>Atypikal</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>United States</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Interaction & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2021</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="development interaction visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/one-nil" class="row">
-                  <div class="flex-col">
-                     <h4><span>One:Nil</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>The Netherlands</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Interaction & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2021</p>
-                  </div>
-               </a>
-            </li>
-                        <li class="design development visible">
-               <div class="stripe animate"></div>
-               <a href="https://dennissnellenberg.com/work/andy-hardy" class="row">
-                  <div class="flex-col">
-                     <h4><span>Andy Hardy</span></h4>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Australia</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>Design & Development</p>
-                  </div>
-                  <div class="flex-col animate">
-                     <p>2020</p>
-                  </div>
-               </a>
-            </li>
-                        <div class="stripe last animate"></div>
-         </ul>
-      </div>
-   </section>
-   <section class="section work-tiles grid-fade grid-columns-part">
-      <div class="container">
-         <ul>
-                        <li class="development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/twice" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #F1F1F1;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>TWICE</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Interaction & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2024</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/the-damai" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #E0D9D1;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>The Damai</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2024</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/fabric" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #48494A;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>FABRIC™</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2023</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/aanstekelijk" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #101010;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>Aanstekelijk</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2023</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="development interaction design visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/base-create" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #363637;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/base-create/1f2468ab51-1680179645/thumbnail-base-desktop.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>Base Create</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2023</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/avvr" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #D8D3CD;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/avvr/4d2a7758a4-1672918357/thumbnail-avvr-v2.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>AVVR</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2023</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/graphichunters" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #7E7E7E;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/graphichunters/0daec771af-1660128857/thumbnail-gh.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>GraphicHunters</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2022</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/future-goals" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #DCD0C2;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/future-goals/614e28a662-1653057688/thumbnail-futuregoals.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>Future Goals</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Interaction & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2022</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/atypikal" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #B1A994;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/atypikal/fd1951ffc9-1646837277/thumbnail-atypikal.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>Atypikal</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Interaction & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2021</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="development interaction visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/one-nil" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: var(--color-lightgray);"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/one-nil/288460827e-1646837272/thumbnail-onenil-v3.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>One:Nil</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Interaction & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2021</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                        <li class="design development visible">
-               <div class="single-tile-wrap">
-                  <a href="https://dennissnellenberg.com/work/andy-hardy" class="row">
-                     <div class="flex-col">
-                        <div class="tile-image">
-                           <div class="overlay overlay-color" style="background-color: #626D6E;"></div>
-                           <div class="overlay overlay-image lazy" style="background-position: center center; background-repeat: no-repeat; background-size: cover;" data-bg="https://dennissnellenberg.com/media/pages/work/andy-hardy/f152b03247-1646837253/thumbnail-andyhardy.jpg"></div>                        </div>
-                     </div>
-                     <div class="flex-col">
-                        <h4><span>Andy Hardy</span></h4>
-                        <div class="stripe"></div>
-                     </div>
-                     <div class="flex-col">
-                        <p>Design & Development</p>
-                     </div>
-                     <div class="flex-col">
-                        <p>2020</p>
-                     </div>
-                  </a>
-               </div>
-            </li>
-                     </ul>
-      </div>
-   </section>
+ </section>
+ 
 </section>
 <section class="section center-grid-btn center-grid-btn-archive" data-scroll-section>
    <div class="container">    
       <div class="grid-after-btn">
          <div class="btn btn-normal btn-dark">
-            <a href="https://dennissnellenberg.com/archive" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+            <a href="index.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                <div class="btn-fill"></div>
                <span class="btn-text">
-                  <span class="btn-text-inner change">Archive<div class="count-nr">63</div></span>
+                  <span class="btn-text-inner change">Home<div class="count-nr"></div></span>
                </span>
             </a>
          </div>
@@ -787,7 +355,7 @@
                                     <div class="stripe"></div>
                                     <div class="btn-fixed">
                                         <div class="btn btn-round" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-position="bottom" data-scroll-offset="-50%, 0">
-                                            <a href="https://dennissnellenberg.com/contact" class="btn-click magnetic " data-strength="100" data-strength-text="50">
+                                            <a href="contact.html" class="btn-click magnetic " data-strength="100" data-strength-text="50">
                                                 <div class="btn-fill"></div>
                                                 <span class="btn-text">
                                                     <span class="btn-text-inner">Get in touch</span>
@@ -800,10 +368,10 @@
                             <div class="row">
                                 <div class="flex-col">
                                     <div class="btn btn-normal">
-                                        <a href="mailto:info@dennissnellenberg.com" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+                                        <a href="mailto:james.dales@mdci.edu.ph" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                         <div class="btn-fill"></div>
                                         <span class="btn-text">
-                                            <span class="btn-text-inner change">info@dennissnellenberg.com</span>
+                                            <span class="btn-text-inner change">james.dales@mdci.edu.ph</span>
                                         </span>
                                         </a>
                                     </div>
@@ -811,7 +379,7 @@
                                         <a href="tel:+31627847430" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                                         <div class="btn-fill"></div>
                                         <span class="btn-text">
-                                            <span class="btn-text-inner change">+31 6 27 84 74 30</span>
+                                            <span class="btn-text-inner change">+63 991 7499 866</span>
                                         </span>
                                         </a>
                                     </div>
@@ -823,7 +391,7 @@
                                 <div class="flex-col">
                                     <div class="credits">
                                         <h5>Version</h5>
-                                        <p>2022 © Edition</p>
+                                        <p>2024 © Edition</p>
                                     </div>
                                     <div class="time">
                                         <h5>Local time</h5>
@@ -832,37 +400,37 @@
                                 </div>
                                 <div class="flex-col">
                                     <div class="socials">
-                                        <h5>Socials</h5>
-                                        <ul>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">Awwwards</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">Instagram</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">Twitter</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="btn btn-link btn-link-external">
-                                                <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                    <span class="btn-text">
-                                                        <span class="btn-text-inner">LinkedIn</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                       <h5>Socials</h5>
+                                       <ul>
+                                           <li class="btn btn-link btn-link-external">
+                                               <a href="https://www.facebook.com/dales.james.2024" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                   <span class="btn-text">
+                                                       <span class="btn-text-inner">Facebook</span>
+                                                   </span>
+                                               </a>
+                                           </li>
+                                           <li class="btn btn-link btn-link-external">
+                                               <a href="https://discord.com/users/841550637644251157" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                   <span class="btn-text">
+                                                       <span class="btn-text-inner">Discord</span>
+                                                   </span>
+                                               </a>
+                                           </li>
+                                           <li class="btn btn-link btn-link-external">
+                                               <a href="viber://chat?number=639350780153" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                   <span class="btn-text">
+                                                       <span class="btn-text-inner">Viber</span>
+                                                   </span>
+                                               </a>
+                                           </li>
+                                           <li class="btn btn-link btn-link-external">
+                                               <a href="https://www.linkedin.com/in/jaimes-dales-3b6664346/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                                   <span class="btn-text">
+                                                       <span class="btn-text-inner">LinkedIn</span>
+                                                   </span>
+                                               </a>
+                                           </li>
+                                       </ul>t3j
                                         <div class="stripe"></div>
                                     </div>
                                 </div>
