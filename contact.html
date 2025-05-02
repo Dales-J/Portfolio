@@ -4,37 +4,78 @@
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <title>Contact - Dales, Jaimes</title>
-      <meta name="description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Netherlands."/>
-      <meta property="og:title" content="Contact - Dennis Snellenberg"/>
-      <meta property="og:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Netherlands."/>
-      <meta property="og:image" content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"/>
-      <meta property="og:site_name" content="Dennis Snellenberg"/>
-                              <meta property="og:locale" content="en"/>
-      <meta property="og:type" content="website"/>      <meta property="twitter:title" content="Contact - Dennis Snellenberg"/>
-      <meta property="twitter:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Netherlands."/>
-      <meta property="twitter:image" content="https://dennissnellenberg.com/media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"/>
+      <meta name="description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="og:title" content="Contact - Jaimes Dales"/>
+      <meta property="og:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="og:image" content="images/closeup.png"/>
+      <meta property="og:site_name" content="Jaimes Dales"/>
+      <meta property="og:locale" content="en"/>
+      <meta property="og:type" content="website"/>
+      <meta property="twitter:title" content="Contact - Jaimes Dales"/>
+      <meta property="twitter:description" content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the Philippines."/>
+      <meta property="twitter:image" content="images/closeup.png"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="google" content="notranslate"/>
-      <meta property="og:locale" content="en"/>
-      <link rel="canonical" href="https://dennissnellenberg.com/contact"/>
+      <link rel="canonical" href="contact.html"/>
 
-      <link rel="preload" as="font" href="https://dennissnellenberg.com/assets/fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
+      <link rel="preload" as="font" href="fonts/NeueMontreal-Regular.otf" type="font/otf" crossorigin="anonymous">
 
-      <link href="https://dennissnellenberg.com/assets/css/normalize.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/locomotive-scroll.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/styleguide.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/components.css" rel="stylesheet">      <link href="https://dennissnellenberg.com/assets/css/style-new.css" rel="stylesheet">
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
-		<script>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/locomotive-scroll.css" rel="stylesheet">
+      <link href="css/styleguide.css" rel="stylesheet">
+      <link href="css/components.css" rel="stylesheet">
+      <link href="css/style-new.css" rel="stylesheet">
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"></script>
+      <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          gtag('set', 'page', window.location.pathname);
          gtag('send', 'pageview');
-         
          gtag('config', 'G-SGWQQRQ15Y');
-		</script>
-      
+      </script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form.form");
+            form.addEventListener("submit", function (e) {
+               e.preventDefault();
+
+               const name = document.getElementById("form-name").value;
+               const email = document.getElementById("form-email").value;
+               const company = document.getElementById("form-company").value;
+               const service = document.getElementById("form-service").value;
+               const message = document.getElementById("form-message").value;
+
+               const subject = encodeURIComponent("New Inquiry from " + name);
+               const body = encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0ACompany: ${company}%0AService: ${service}%0AMessage: ${message}`);
+
+               const mailtoLink = `mailto:james.dales@mdci.edu.ph?subject=${subject}&body=${body}`;
+               window.location.href = mailtoLink;
+            });
+         });
+      </script>
    </head>
 
+   <body data-barba="wrapper">
+      <div class="flex-col">
+         <div class="profile-picture" style="background-image: url('images/closeup.png'); background-size: cover; background-position: center; width: 150px; height: 150px; border-radius: 50%;"></div>
+         <div class="arrow">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>arrow-up-right</title>
+               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#FFFFFF" stroke-width="1.5">
+                     <g id="arrow-up-right" transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                        <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                        <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
     <body data-barba="wrapper">
         <div class="no-scroll-overlay"></div>
         <div class="loading-container">
@@ -249,7 +290,7 @@
                <div class="form-col">
                   <h5>03</h5>
                   <label class="label" for="email">What's the name of your organization?</label>
-                  <input class="field" type="text" id="form-company" name="company" value="" required placeholder="John & Doe ®">
+                  <input class="field" type="text" id="form-company" name="company" value="" required placeholder="juan Delacruz ®">
                                  </div>
                <div class="form-col">
                   <h5>04</h5>
@@ -259,7 +300,7 @@
                <div class="form-col">
                   <h5>05</h5>
                   <label class="label" for="message">Your message</label>
-                  <textarea class="field" type="text" id="form-message" name="message" rows="8"  required placeholder="Hello Dennis, can you help me with ... *"></textarea>
+                  <textarea class="field" type="text" id="form-message" name="message" rows="8"  required placeholder="Hello Dales,, can you help me with ... *"></textarea>
                                  </div>
                <div class="btn-contact-send">
                   <div class="btn btn-round" data-scroll data-scroll-speed="2" data-scroll-offset="-50%, 0%">
